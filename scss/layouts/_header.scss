@@ -8,9 +8,36 @@
       }
     }
     .input-group {
+      background-color: $color-gray-6;
+      border: 1px solid $color-gray-6;
       p {
         flex-grow: 1;
         margin-bottom: 0;
+      }
+      .form-control {
+        outline: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-right: none;
+        &:focus,
+        &:active {
+          box-shadow: unset;
+          background-color: $color-white-0;
+          &+div{
+            background-color: $color-white-0;
+          }
+        }
+      }
+      .input-group-text {
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-right: unset;
+        border-left: none;
+        color: $color-orange;
+        &:hover{
+          background-color: $color-orange;
+          color: #ffffff;
+        }
       }
     }
     .categories {
@@ -63,3 +90,4 @@
     }
   }
 }
+

@@ -24,3 +24,16 @@
     $color-gray-3
   );
 }
+.btn--search {
+  @include button(
+    $color-orange,
+    $fs-2,
+    $color-white-0,
+    $pd-0,
+    $pd-0,
+    $color-white-0,
+    $color-white-0,
+    $color-orange,
+    $color-orange
+  )
+}

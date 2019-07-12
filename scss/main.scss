@@ -1,6 +1,13 @@
 @import "./base/reset";
+
 @import "./helpers/variables";
 @import "./helpers/mixin";
-@import "./base/customize";
 @import "./components/button";
+
+@import "./base/customize";
+@import "./layouts/banner";
 @import "./layouts/header";
+@import "./layouts/intro";
+@import "./layouts/courses";
+
+

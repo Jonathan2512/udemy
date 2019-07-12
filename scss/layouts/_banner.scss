@@ -1,0 +1,39 @@
+.banner-section {
+  background: url(./../img/banner.jpg);
+  height: 500px;
+  background-size: cover;
+  .banner-content {
+    margin-left: 15%;
+    .banner-text {
+      padding-top: 15%;
+      text-shadow: 0 2px 4px rgba(41, 48, 59, 0.55);
+      h3 {
+        @include text($color-white-0, $fs-4, $fw-bold-0);
+      }
+      p {
+        @include text($color-white-0, $fs-0 + 3, $fw-normal);
+        width: 40%;
+        margin: 15px 0;
+      }
+    }
+    .banner-group {
+      .banner-search {
+        width: 35%;
+        padding: 15px;
+        height: 50px;
+        padding: $pd-1 + 1 $pd-2 - 3 ;
+        font-size: $fs-2;
+        border: 1px solid transparent;
+        &:focus, &:active{
+            box-shadow: none;
+            border: 1px solid transparent;
+            outline: unset;
+        }
+      }
+      .banner-group-prepend > button{
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+}

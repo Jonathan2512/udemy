@@ -25,15 +25,82 @@
     background-color: #6e1a52;
     border: 1px solid #cacbcc; }
 
+.btn--search {
+  color: #ec5252;
+  font-size: 20px;
+  background-color: #fff;
+  padding: 5px 5px;
+  border: 1px solid #fff; }
+  .btn--search:hover {
+    color: #fff;
+    background-color: #ec5252;
+    border: 1px solid #ec5252; }
+
+.banner-section {
+  background: url(./../img/banner.jpg);
+  height: 500px;
+  background-size: cover; }
+  .banner-section .banner-content {
+    margin-left: 15%; }
+    .banner-section .banner-content .banner-text {
+      padding-top: 15%;
+      text-shadow: 0 2px 4px rgba(41, 48, 59, 0.55); }
+      .banner-section .banner-content .banner-text h3 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 600; }
+      .banner-section .banner-content .banner-text p {
+        color: #fff;
+        font-size: 18px;
+        font-weight: normal;
+        width: 40%;
+        margin: 15px 0; }
+    .banner-section .banner-content .banner-group .banner-search {
+      width: 35%;
+      padding: 15px;
+      height: 50px;
+      padding: 11px 17px;
+      font-size: 20px;
+      border: 1px solid transparent; }
+      .banner-section .banner-content .banner-group .banner-search:focus, .banner-section .banner-content .banner-group .banner-search:active {
+        box-shadow: none;
+        border: 1px solid transparent;
+        outline: unset; }
+    .banner-section .banner-content .banner-group .banner-group-prepend > button {
+      height: 50px;
+      width: 50px; }
+
 #header {
   border-bottom: 1px solid #000000; }
   #header .header__left .navbar-brand {
     flex-grow: 1; }
     #header .header__left .navbar-brand img {
       width: 100px; }
-  #header .header__left .input-group p {
-    flex-grow: 1;
-    margin-bottom: 0; }
+  #header .header__left .input-group {
+    background-color: #f2f3f5;
+    border: 1px solid #f2f3f5; }
+    #header .header__left .input-group p {
+      flex-grow: 1;
+      margin-bottom: 0; }
+    #header .header__left .input-group .form-control {
+      outline: none;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-right: none; }
+      #header .header__left .input-group .form-control:focus, #header .header__left .input-group .form-control:active {
+        box-shadow: unset;
+        background-color: #fff; }
+        #header .header__left .input-group .form-control:focus + div, #header .header__left .input-group .form-control:active + div {
+          background-color: #fff; }
+    #header .header__left .input-group .input-group-text {
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-right: unset;
+      border-left: none;
+      color: #ec5252; }
+      #header .header__left .input-group .input-group-text:hover {
+        background-color: #ec5252;
+        color: #ffffff; }
   #header .header__left .categories {
     flex-grow: 1;
     align-self: center;
@@ -71,5 +138,28 @@
     #header .categories,
     #header .input-search {
       display: none; } }
+
+.intro-section .banner-intro {
+  background: linear-gradient(-45deg, #ec5252 0, #6e1a52 100%); }
+  .intro-section .banner-intro .intro-item {
+    display: flex;
+    align-items: center; }
+    .intro-section .banner-intro .intro-item i {
+      color: #fff;
+      font-size: 40px;
+      font-weight: normal;
+      display: block;
+      margin-right: 16px; }
+    .intro-section .banner-intro .intro-item .intro-text {
+      margin-top: 20px; }
+      .intro-section .banner-intro .intro-item .intro-text h4 {
+        color: #fff;
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 0; }
+      .intro-section .banner-intro .intro-item .intro-text p {
+        color: #fff;
+        font-size: 15px;
+        font-weight: normal; }
 
 /*# sourceMappingURL=styles.css.map */
