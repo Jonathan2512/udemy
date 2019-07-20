@@ -37,3 +37,29 @@
     $color-orange
   )
 }
+.btn--gradient{
+  @include button (
+    $color-white-0,
+    $fs-0,
+    $color-orange,
+    $pd-1,
+    $pd-1,
+    $color-orange,
+    $color-white-0,
+    $color-red-1,
+    $color-red-1
+  )
+}
+.btn--dropup{
+  @include button(
+    $color-gray-4,
+    $fs-1,
+    $color-white-0,
+    $pd-1,
+    $pd-1,
+    $color-gray-4,
+    $color-black-0,
+    $color-black-dark,
+    $color-black
+  )
+}

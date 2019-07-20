@@ -108,7 +108,7 @@
     }
   }
 }
-@mixin HoverShadow {
+@mixin HoverShadow() {
   .hoverShadow:hover {
     box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
   }
